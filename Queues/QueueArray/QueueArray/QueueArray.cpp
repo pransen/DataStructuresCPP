@@ -34,9 +34,7 @@ int Queue::dequeue()
 	}
 	else {
 		cout << "Empty queue!" << endl;
-	}
-	// reset the front and rear pointers when they have reached the end of the array
-	if (this->front == this->size - 1 && this->rear == this->size - 1) {
+		// reset the front and rear pointers when they have reached the end of the array
 		this->front = this->rear = -1;
 	}
 	return x;
